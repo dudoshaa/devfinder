@@ -43,6 +43,8 @@ export const updateUi = (user: User) => {
     } else {
       location.classList.add("not-available");
       locationSvg.classList.add("not-available-svg");
+      location.textContent = "Not Available";
+
     }
     if (user.blog) {
       blog.setAttribute("href", user.blog);
