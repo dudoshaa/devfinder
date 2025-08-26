@@ -12,13 +12,13 @@ themeToggle.addEventListener("click", () => {
   if (currentTheme === "dark") {
     document.body.setAttribute("data-theme", "light");
     themeText.textContent = "Dark";
-    themeIcon.src = "../public/images/dark-mood.svg";
+    themeIcon.src = "./public/images/dark-mood.svg";
     themeIcon.alt = "dark-mood-icon";
     localStorage.setItem("theme", "light");
   } else {
     document.body.setAttribute("data-theme", "dark");
     themeText.textContent = "Light";
-    themeIcon.src = "../public/images/light-mood.svg";
+    themeIcon.src = "./public/images/light-mood.svg";
     themeIcon.alt = "light-mood-icon";
     localStorage.setItem("theme", "dark");
   }
@@ -29,10 +29,10 @@ if (savedTheme) {
   document.body.setAttribute("data-theme", savedTheme);
   if (savedTheme === "dark") {
     themeText.textContent = "Light";
-    themeIcon.src = "../public/images/light-mood.svg";
+    themeIcon.src = "./public/images/light-mood.svg";
   } else {
     themeText.textContent = "Dark";
-    themeIcon.src = "../public/images/dark-mood.svg";
+    themeIcon.src = "./public/images/dark-mood.svg";
   }
 }
 const search = document.getElementById("search") as HTMLFormElement;
